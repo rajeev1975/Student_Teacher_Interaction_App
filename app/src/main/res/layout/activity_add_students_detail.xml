@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudentsDetail">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/detail"
+            android:text="Students' Detail"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_below="@+id/detail"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vName"
+                android:text="Name"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_toRightOf="@+id/vName"
+                android:textSize="25sp"
+                android:hint="Name"
+                android:layout_width="280dp"
+                android:inputType="textCapWords"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_below="@+id/row1"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vRegNo"
+                android:text="Reg. No"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/regNo"
+                android:layout_toRightOf="@+id/vName"
+                android:textSize="25sp"
+                android:hint="Reg Number"
+                android:layout_width="280dp"
+                android:inputType="text"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_below="@+id/row2"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vEmail"
+                android:text="Email "
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/email"
+                android:textSize="25sp"
+                android:layout_below="@+id/detail"
+                android:hint="Email address"
+                android:layout_width="280dp"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_below="@+id/row3"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vBranch"
+                android:text="Branch"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/branch"
+                android:textSize="25sp"
+                android:hint="Branch"
+                android:layout_width="280dp"
+                android:inputType="textEmailAddress"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row5"
+            android:layout_below="@+id/row4"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vSemester"
+                android:text="Semester"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Spinner
+                android:id="@+id/semester"
+                android:layout_width="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row6"
+            android:orientation="horizontal"
+            android:layout_below="@+id/row5"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vGender"
+                android:text="Gender"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:text="Male"
+                    android:textSize="25sp"
+                    android:onClick="checkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:text="Female"
+                    android:textSize="25sp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="checkButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/save"
+            android:textSize="25sp"
+            android:layout_below="@+id/row6"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:text="save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

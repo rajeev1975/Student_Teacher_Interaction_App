@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.StudentTeacherInteractionApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TeacherShareHomeWork"></activity>
+        <activity android:name=".ViewHomeWork" />
+        <activity android:name=".PayFee" />
+        <activity android:name=".TShareRoutine" />
+        <activity android:name=".ViewAttendance" />
+        <activity android:name=".UploadAttendance" />
+        <activity android:name=".StudentNotice" />
+        <activity android:name=".ShareTeachersNotice" />
+        <activity android:name=".TeachersActivities" />
+        <activity android:name=".AddTeachersDetail" />
+        <activity android:name=".TeacherLoginPage" />
+        <activity android:name=".AddStudentsDetail" />
+        <activity android:name=".Student_Activities" />
+        <activity android:name=".StudentLoginPage" />
+        <activity android:name=".StudentSignUp" />
+        <activity android:name=".TeacherSignUp" />
+        <activity android:name=".AddTeacherStudent" />
+        <activity android:name=".AdminLoginPage" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

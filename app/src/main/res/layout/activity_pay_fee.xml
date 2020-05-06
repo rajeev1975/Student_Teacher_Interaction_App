@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayFee">
+
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_marginTop="20dp"
+        android:hint="amount"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_marginTop="20dp"
+        android:hint="name"
+        android:layout_below="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/upiId"
+        android:layout_marginTop="20dp"
+        android:hint="UPI ID"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_marginTop="20dp"
+        android:hint="Note"
+        android:layout_below="@+id/upiId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/pay"
+        android:text="pay by upi"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/note"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

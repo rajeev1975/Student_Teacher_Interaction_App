@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTeacherStudent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addTeacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="120dp"
+        android:elevation="60dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/teacher"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/teacher"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Add Teacher"
+                android:textAllCaps="true"
+
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/addStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="120dp"
+        android:layout_toRightOf="@+id/addTeacher"
+        android:elevation="60dp"
+        app:cardCornerRadius="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/student"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/student"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="ADD Student"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+
+                android:textSize="18sp"></TextView>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

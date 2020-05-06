@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewAttendance">
+
+    <TextView
+        android:id="@+id/vAttendance"
+        android:text="Attendance"
+        android:textAllCaps="true"
+        android:layout_marginTop="30dp"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/vAttendance"
+        android:background="#B0BEC5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAttendShow"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_below="@+id/recyclerViewAttendShow"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/vPAttendance"
+            android:text="Percent"
+            android:layout_width="120dp"
+            android:textSize="30sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/perAttendance"
+            android:textSize="35sp"
+            android:layout_marginLeft="40dp"
+            android:layout_centerHorizontal="true"
+            android:text="percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

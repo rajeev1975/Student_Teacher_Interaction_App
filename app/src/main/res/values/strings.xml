@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Mini Project 4</string>
+
+    <string-array name="semester">
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+        <item>Fifth</item>
+        <item>Sixth</item>
+        <item>Seventh</item>
+        <item>Eighth</item>
+    </string-array>
+
+
+</resources>
